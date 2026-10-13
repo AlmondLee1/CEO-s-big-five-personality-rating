@@ -1,0 +1,7 @@
+[pilot]
+# Edit these values before running a paid API pilot.
+provider = "deepseek"
+dimension = "extraversion"
+iterations = 2
+input = "data/ceo_pilot_10.csv"
+output_dir = "outputs/pilot-{provider}-{dimension}-{iterations}"

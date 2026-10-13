@@ -1,0 +1,46 @@
+[run]
+iterations = 500
+temperature = 0.4
+max_tokens = 1024
+max_retries = 3
+timeout_seconds = 30
+request_delay_seconds = 1.0
+
+[providers.deepseek]
+adapter = "openai_compatible"
+base_url = "https://api.deepseek.com"
+api_key_env = "DEEPSEEK_API_KEY"
+model = "deepseek-flash"
+max_tokens = 1024
+temperature_mode = "omit"
+thinking_mode = "enabled"
+
+[providers.qwen]
+adapter = "openai_compatible"
+base_url = "https://dashscope.aliyuncs.com/compatible-mode/v1"
+api_key_env = "DASHSCOPE_API_KEY"
+model = "qwen3.8-flash"
+
+[providers.doubao]
+adapter = "openai_compatible"
+base_url = "https://ark.cn-beijing.volces.com/api/v3"
+api_key_env = "ARK_API_KEY"
+model = "doubao-seed-2-1-turbo-260628"
+
+[providers.claude]
+adapter = "anthropic"
+api_key_env = "ANTHROPIC_API_KEY"
+model = "claude-haiku-5-5"
+temperature_mode = "omit"
+
+[providers.gpt]
+adapter = "openai_compatible"
+base_url = "https://api.openai.com/v1"
+api_key_env = "OPENAI_API_KEY"
+model = "gpt-6-luna"
+temperature_mode = "omit"
+
+[providers.gemini]
+adapter = "gemini"
+api_key_env = "GEMINI_API_KEY"
+model = "gemini-3.8-flash"

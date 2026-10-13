@@ -33,7 +33,7 @@ Open `outputs/demo/ratings.xlsx`. The ten CEO names are real; the demonstration 
 ## Run a live pilot
 
 1. Copy `.env.example` to `.env`. In `.env`, replace the placeholder for your selected provider with your own API key. Keep this file private.
-2. Edit `pilot.toml`: choose `provider`, `dimension`, `iterations`, and, if needed, `input`. The supplied input is `data/ceo_pilot_10.csv`. Each repetition makes one rating request per CEO, so the supplied ten-person input creates `10 �� iterations` rating slots.
+2. Edit `pilot.toml`: choose `provider`, `dimension`, `iterations`, and, if needed, `input`. The supplied input is `data/ceo_pilot_10.csv`. Each repetition makes one rating request per CEO, so the supplied ten-person input creates `10 × iterations` rating slots.
 3. Edit `config.toml` only if you need a different model ID, endpoint, output limit, timeout, retry count, delay, or temperature setting.
 4. On Windows, double-click `run_pilot.bat`. Check the displayed provider, trait, total slots, and output folder; then type `YES` to start paid calls.
 

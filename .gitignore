@@ -1,0 +1,9 @@
+.env
+__pycache__/
+*.py[cod]
+.pytest_cache/
+outputs/
+data/source/
+data/ceorater_ceos_*.csv
+data/ceorater_ceos_*.manifest.json
+*.log
