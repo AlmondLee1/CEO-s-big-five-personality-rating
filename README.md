@@ -12,7 +12,7 @@ Run a ten-CEO example that requests individual Big Five ratings from a selected 
 
 ## Install
 
-Install Python 3.11 or newer. Open a terminal in this `submission` folder and run:
+Install Python 3.11 or newer. Open a terminal in the repository folder and run:
 
 ```powershell
 python -m pip install -r requirements.txt
